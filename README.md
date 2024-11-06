@@ -13,8 +13,25 @@ Press the button to open this repository in GitHub Codespaces:
 
 Or, if you prefer to do it manually: at the top of this GitHub page, above the file browser, select the <> Code button, choose the Codespaces tab and choose Create codespace on main. This will start up a new Codespaces environment.
 
-### Step 3. Install Python libraries
+### Step 3. Set OpenSearch credentials
+To connect to OpenSearch cluster we'll use the URI of your cluster. 
 
+1. Grab srevice URI from the service page of your Aiven for OpenSearch.
+2. Clone `.env.examples` and rename it to `.env`.
+3. Set `SERVICE_URI` in `.env` to your cluster's URI.
+
+### Step 4. Install Python libraries
+We'll need python libraries to operate OpenSearch, run the model and work with credentials.
+Install them by running
+
+```
+pip install opensearch-py
+pip install python-dotenv
+pip install git+https://github.com/openai/CLIP.git
+pip install ftfy regex tqdm
+pip install Pillow   
+pip install torch
+```
 
 
 ## Part 2. Create OpenSearch index that supports KNN
@@ -23,7 +40,7 @@ To make sure that OpenSearch recognises vector data and supports KNN search, whe
 - set `knn` setting to true
 - specify name of the property to contain vector data, set its type to `knn_vector` and specify its dimension size.
 
-Go to `1-prepare-opensearch.ipynb` and run the notebook.
+Go to `1-prepare-opensearch.ipynb` and run the notebook. Install/enable suggested extentions for python and Jupitor notebooks. Select recommended python environment.
 
 You should see the response 
 

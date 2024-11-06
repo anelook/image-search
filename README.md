@@ -1,4 +1,4 @@
-# When text meets image: a guide to OpenSearch for multimodal search
+# Workshop: a guide to OpenSearch for multimodal search
 
 ## Part 1. Prepare working environment
 
@@ -6,17 +6,13 @@
 
 Register at [https://go.aiven.io/signup-opensearch-clip](https://go.aiven.io/signup-opensearch-clip) to host your OpenSearch service and get $400 credits for other services.
 
-Follow the registration steps:
-
-TODO
-
 ### Step 2. Set up Codespaces
 Press the button to open this repository in GitHub Codespaces:
 
-TODO
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](
+https://github.com/codespaces/new/Aiven-Labs/pgvector-tensorflow-movie-recommendations-workshop)
 
 Or, if you prefer to do it manually: at the top of this GitHub page, above the file browser, select the <> Code button, choose the Codespaces tab and choose Create codespace on main. This will start up a new Codespaces environment.
-
 
 ### Step 3. Install Python libraries
 

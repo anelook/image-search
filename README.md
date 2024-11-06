@@ -44,11 +44,15 @@ In this step we'll load the CLIP model, compute feature vectors for a batch of i
 
 Go to `2-process-and-upload.ipynb` and run the notebook steps one by one. The last step will take several minutes to iterate over the photos.
 
-## Part 3. Search for images
+## Part 4. Search for images
 
-To search for an image by providing text description we'll do the following:
+Time to search for an image by providing a text description. For this we'll do the following:
 
 1. Transpate the text into a vector using CLIP model.
 2. Compare this single vector to the vectors for images that we stored in OpenSearch
 3. Retrieve 3 nearest images to the vector that is searched for.
+
+Go to `3-run-vector-search.ipynb` and run the notebook steps one by one. 
+Change value of ``text_input`` to search for different images.
+
  

@@ -1,4 +1,4 @@
-# Workshop: a guide to OpenSearch for multimodal search
+# Workshop: Searching for images with vector search - OpenSearch and CLIP model
 
 ## Part 1. Prepare working environment
 
